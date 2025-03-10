@@ -4,8 +4,157 @@ File Name: styles.css
 Date: March 9, 2025
 */
 
+/* Global Styles */
 body {
-  background-color: rgb(36, 159, 221);
+  background: linear-gradient(to bottom, #007BFF, #0056b3); /* Gradient for large screens */
   color: white;
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background: #0056b3;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Navigation */
+nav {
+  background: #003f7f;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero Image */
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Image Gallery Section */
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.image-gallery img {
+  width: 45%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Two-Row, Two-Column Layout for Summary Section */
+.summary-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.summary-section .row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.summary-section .column {
+  width: 48%;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Alternate background for every other row */
+.summary-section .row:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* About Page Layout */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.about-container .column {
+  width: 48%;
+  padding: 15px;
+  text-align: center;
+}
+
+.about-container img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #003f7f;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .summary-section {
+    flex-direction: column;
+    max-width: 90%;
+  }
+  .summary-section .row {
+    flex-direction: column;
+  }
+  .summary-section .column {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .about-container {
+    flex-direction: column;
+  }
+  .about-container .column {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .summary-section {
+    flex-direction: column;
+  }
+  .summary-section .column {
+    width: 100%;
+  }
 }

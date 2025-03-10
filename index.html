@@ -9,45 +9,70 @@ Date: March 9, 2025
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BioSite - Home</title>
+  <meta name="description" content="Pete's BioSite - A glimpse into his life and hobbies">
+  <meta name="keywords" content="Pete, bio, hobbies, data science, astronaut, deep-sea diving">
+  <meta name="author" content="Chris Newell">
+  <title>Pete's BioSite - Home</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
   <!-- Header Section -->
   <header>
-    <h1>Welcome to Pete's BioSite</h1>
+    <h1>The Man, The Myth, The Legend</h1>
   </header>
 
   <!-- Navigation Menu -->
-  <nav>
+  <nav aria-label="Main Navigation">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="hobby.html">Hobby</a></li>
+      <li><a href="hobbies.html">Hobbies</a></li>
     </ul>
   </nav>
 
-  <!-- Main Content Area -->
-  <main>
-    <section class="hero">
-      <h2>hero heading for w3c</h2>
-      <img src="images/hero.jpg" alt="Pete's Hero Image">
-    </section>
+  <!-- Hero Image Section -->
+  <section class="hero">
+    <img src="images/hero_pete.png" alt="Pete floating in space during astronaut training" width="100%">
+  </section>
 
-    <section class="bio-summary">
-      <h2>Meet Pete</h2>
-      <p>Pete is a talented data scientist who spent 8 years living in China. He now resides in Florida with his wife. In his free time, Pete enjoys video gaming, astronomy, martial arts, and deep-sea diving. His journey has been filled with adventure and curiosity, always seeking new knowledge and experiences.</p>
-    </section>
+  <!-- Subject's Summary Section -->
+  <section class="summary-section">
+    <div class="row">
+      <div class="column">
+        <h3>Meet Pete</h3>
+        <p>Pete is an adventurous data scientist who spent eight years in China, immersing himself in technology, culture, and exploration. With a strong background in artificial intelligence and analytics, Pete has contributed to groundbreaking projects that blend machine learning with real-world applications.</p>
+      </div>
+      <div class="column">
+        <h3>Adventures & Exploration</h3>
+        <p>Throughout his career, Pete has received multiple awards for his contributions to AI research. He has also traveled extensively, training in martial arts at historic temples, experiencing extreme weather conditions, and even attempting to set a world record for the longest gaming marathon. His story is one of innovation, adventure, and the relentless pursuit of knowledge.</p>
+      </div>
+    </div>
+    <div class="row alt-background">
+      <div class="column">
+        <h3>Martial Arts & Discipline</h3>
+        <p>During his time in China, Pete trained in Shaolin Kung Fu, mastering techniques that emphasize precision, strength, and mindfulness.</p>
+      </div>
+      <div class="column">
+        <h3>Competitive Gaming</h3>
+        <p>Pete competes in strategy-based gaming tournaments where he applies data analysis skills to gain a competitive edge.</p>
+      </div>
+    </div>
+  </section>
 
-    <section class="external-link">
-      <h3>Learn More About Data Science</h3>
-      <p>Check out <a href="https://www.datasciencecentral.com" target="_blank">Data Science Central</a> for great insights.</p>
-    </section>
-  </main>
+  <!-- Images of Pete -->
+  <section class="image-gallery">
+    <img src="images/florida.jpeg" alt="Pete enjoying the Florida coastline">
+    <img src="images/plgw.jpeg" alt="Pete exploring a scenic location with his wife">
+  </section>
 
   <!-- Footer Section -->
   <footer>
+    <!-- External Link -->
+  <section class="external-link">
+    <h3>Learn More Pete's Passion: Data Science</h3>
+    <p>Check out <a href="https://www.datasciencecentral.com" target="_blank">Data Science Central</a> for great insights.</p>
+  </section>
     <p>&copy; 2025 Pete's BioSite</p>
   </footer>
 
